@@ -1,0 +1,112 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    height: 100%;
+    width: 100%;
+       
+}
+#index{
+background-image: url(bg-1.jpg);
+background-size: cover;
+background-repeat: no-repeat;
+background-position: center;
+transition: 1s;
+    height: 820px;
+
+  animation-name: animation;
+  animation-direction:alternate-reverse;
+  animation-duration:30s ;
+  animation-fill-mode:forwards ;
+  animation-iteration-count:infinite ;
+  animation-play-state:running ;
+  animation-timing-function:ease-in-out ;
+  display: flex;
+  justify-content: center;
+}
+@keyframes animation {
+   0%{
+       background-image: url(bg-1.jpg);
+   } 
+   20%{
+       background-image: url(bg-2.jpg);
+   }
+   40%{
+       background-image: url(bg-3.jpg);
+   }
+   60%{
+       background-image: url(bg-4.jpg);
+
+   }
+   80%{
+       background-image: url(bg-5.jpg);
+   }
+   100%{
+       background-image: url(img-1.jpg);
+   }
+}
+.container{
+ background-color: rgba(230, 236, 236, 0.384);
+ height: 500px;
+ width: 450px;
+ margin-top: 180px;
+ border-radius: 20px;
+}
+.upper{
+    margin-left: 100px;
+
+}
+h1{
+    color: rgb(0, 0, 0);
+ font-family: cursive;
+ font-size: 35px;
+ padding-top: 50px;
+}
+p{
+    font-size: 25px;
+    padding-top: 20px;
+    padding-left: 40px;
+    font-style: oblique;
+    font-weight: 600;
+    
+}
+input{
+    padding: 10px;
+    width: 200px;
+    border-radius: 10px;
+    border:none;
+    margin-top: 20px;
+    background-color: rgba(46, 32, 32, 0.541);
+    color: rgb(255, 255, 255);
+    height: 27px;
+    font-size: 19px;
+    font-family: cursive;
+  
+}
+.bmi{
+    margin-top: 40px;
+    margin-left: 100px;
+}
+button{
+    height: 50px;
+    width: 200px;
+    padding: 5px;
+    font-size: 18px;
+    border-radius: 24px;
+    border: none;
+    margin-left: 10px;
+    background: linear-gradient(90deg,rgba(216, 120, 120, 0.781), rgba(75, 194, 75, 0.781));
+    font-weight: 400;
+}
+button:hover{
+    background: linear-gradient(90deg, rgba(37, 207, 165, 0.781), rgba(122, 69, 122, 0.788));
+}
+#bmiResult{
+    margin-top: 20px;
+    font-size: 20px;
+    margin-left: 95px;
+    color: rgb(255, 255, 255);
+}
+
+ 
